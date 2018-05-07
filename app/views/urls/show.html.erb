@@ -1,0 +1,17 @@
+  <h2>Show Url</h2>
+<table>
+  <tr>
+    <th>Long URL</th>
+    <th>Shortened URL</th>
+    <th>URL ID</th>
+    <th colspan="3"></th>
+  </tr>
+
+  <% Url.all.each do |url| %>
+    <tr>
+      <td><%= url.long %></td>
+      <td><%= url.short %></td>
+      <td><%= url.id %></td>
+    </tr>
+  <% end %>
+</table>
